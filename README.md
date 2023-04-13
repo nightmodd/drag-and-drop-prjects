@@ -1,1 +1,1 @@
-# drag-and-drop-prjects
+# drag-and-drop-projects
