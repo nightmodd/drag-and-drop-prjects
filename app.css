@@ -28,6 +28,9 @@ textarea {
   width: 100%;
   max-width: 30rem;
   border: 1px solid #ccc;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem ;
 }
 
 input:focus,
@@ -38,6 +41,7 @@ textarea:focus {
 
 button {
   font: inherit;
+  font-weight: bold;
   background: #ff0062;
   border: 1px solid #ff0062;
   cursor: pointer;
@@ -57,6 +61,7 @@ button:active {
 
 .projects {
   margin: 1rem;
+  width: 90%;
   border: 1px solid #ff0062;
 }
 
@@ -68,6 +73,10 @@ button:active {
   align-items: center;
 }
 
+#user-input {
+  width: 90%;
+  text-align: center;
+}
 #finished-projects {
   border-color: #0044ff;
 }
@@ -75,6 +84,8 @@ button:active {
 #finished-projects header {
   background: #0044ff;
 }
+
+
 
 .projects h2 {
   margin: 0;
@@ -91,6 +102,8 @@ button:active {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
   padding: 1rem;
   margin: 1rem;
+  text-align: center;
+  background-color: white;
 }
 
 .projects li h2 {
@@ -107,17 +120,18 @@ button:active {
   font-size: 1rem;
 }
 
-.project li p {
+.projects li p {
   margin: 0;
+  color: rgb(119, 99, 99);
 }
 
 .droppable {
-  background: #ffe3ee;
+  background: #ebc4d4;
 }
 
 
 #finished-projects .droppable {
-  background: #d6e1ff;
+  background: #c1cce9;
 }
 
 #user-input {
@@ -125,4 +139,21 @@ button:active {
   padding: 1rem;
   border: 1px solid #ff0062;
   background: #f7f7f7;
+}
+
+
+@media screen    and (min-width: 768px) {
+
+  #user-input {
+    margin: 1rem auto;
+    
+    max-width: 56.25rem;
+  }
+  .projects {
+    max-width: 56.25rem;
+    justify-content: space-between;
+    margin: 1rem auto;
+  }
+
+  
 }
